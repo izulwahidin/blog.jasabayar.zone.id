@@ -1,0 +1,50 @@
+title = "ArteHow"
+baseURL = 'https://artehow.com/'
+languageCode = 'en-us'
+
+enableEmoji = false
+ignoreErrors = [
+  "additional-script-loading-error",
+] # ignore error of loading additional scripts.
+
+
+# Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
+[params.browserconfig]
+TileColor = "#2d89ef" # default windows 10 blue tile color
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/izulwahidin"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/izulwahidin"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"
+
+[module]
+[[module.imports]]
+path = "github.com/hugo-sid/hugo-blog-awesome"
+
+[params]
+toc = true
+math = true
+
+[menu]
+[[menu.main]]
+pageRef = "/"
+name = 'Home'
+url = '/'
+weight = 10
+[[menu.main]]
+pageRef = "posts"
+name = 'Posts'
+url = '/posts/'
+weight = 20
+[[menu.main]]
+pageRef = "about"
+name = 'About'
+url = '/about/'
+weight = 30
