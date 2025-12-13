@@ -1,6 +1,7 @@
 <?php
-$targetDir = "D:\_IZUL\Hugo New\myblog\content\posts";
-$postJSON = glob("D:\_IZUL\PHP\Free Gemini AI Articles\content\*.json");
+$targetDir = __DIR__ . "\content\posts";
+if (!is_dir($targetDir)) mkdir($targetDir);
+$postJSON = glob("D:\_IZUL\PHP\Free Gemini AI Articles\content_jb\*.json");
 
 foreach ($postJSON as $post) {
     $post = json_decode(file_get_contents($post));
