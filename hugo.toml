@@ -1,5 +1,5 @@
-title = "Blog Jasa Bayar"
-baseURL = 'https://blog.jasabayar.zone.id/'
+title = "jasabayar"
+baseURL = '/'
 languageCode = 'en-us'
 
 enableEmoji = false
@@ -43,8 +43,3 @@ pageRef = "posts"
 name = 'Posts'
 url = '/posts/'
 weight = 20
-[[menu.main]]
-pageRef = "about"
-name = 'About'
-url = '/about/'
-weight = 30
