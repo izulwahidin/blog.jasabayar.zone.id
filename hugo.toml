@@ -1,5 +1,5 @@
 title = "jasabayar"
-baseURL = '/'
+baseURL = 'https://blog.jasabayar.zone.id/'
 languageCode = 'en-us'
 
 enableEmoji = false
